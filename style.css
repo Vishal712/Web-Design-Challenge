@@ -1,0 +1,43 @@
+.box {
+  min-height: 50px;
+  height: 500;
+  padding: 5px;
+  margin: 5px;
+  font-weight: 800;
+  background: white
+}
+
+.boxVis {
+  min-height: 100px;
+  height: 800;
+  padding: 5px;
+  margin: 5px;
+  font-weight: 800;
+  background: white
+}
+
+.plotSide {
+  height: 200px;
+  weight: 200px
+}
+
+
+.margin-top-80 {
+  margin-top: 80px;
+}
+
+.latfont {
+  font-size: 18;
+}
+
+body{
+   background-color: beige;
+}
+
+/* @@media (max-width: 600px) {
+  .box-1{
+    min-height: 25px;
+
+  }
+
+} */

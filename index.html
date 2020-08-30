@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light" style= "background-color: #F8F8FF;">
+  <a class="navbar-brand latfont" href="#">Lattitude</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="LatvsMaxTemperature.html">Latitude vs Max Temperature</a>
+          <a class="dropdown-item" href="LatvsHumidity.html">Latitude vs Humidity</a>
+          <a class="dropdown-item" href="LatvsCloudiness.html">Latitude vs Cloudiness</a>
+          <a class="dropdown-item" href="LatvsWindSpeed.html">Latitude vs Wind Speed</a>
+
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Comparison.html">Comparison</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Data.html">Data</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+  <br>
+  </br>
+
+
+    <div class="row">
+    <!--First Column in this Row-->
+    <div class="col-md-7">
+      <div class = "box">
+        <div class = "container">
+          <div class="pb-2 mt-4 mb-2 border-bottom">
+                <h1>Summary: Lattitude vs X<h1>
+          </div>
+
+          <a><img src="Images/LatVSTemp.png" alt="Latitude vs. Max Temperature" height="250" width="250"></a>
+          <p>The purpose of this project was to see a comparison of multiple observations and the lattitude of cities recorded. In general, this can tell us
+             what happens when we go closer or farther from the equator.
+             <br>
+             This was accomplished using an OpenWeatherAPI, used to get information from over 500 cities, returning a plethora of information as it relates to weather. Then after
+             getting the information from the API, we stored it in a Pandas Dataframe, and started to plot certain aspects. This includes the Latitude of the city and the Temperature,
+             the cloudiness, humidity, and wind speed.
+             <br>
+             This box contains an example of one of the four plots included in the site, with the rest shown to the right, and also on the Comparison page and Plots dropdown on
+             the top navbar. Each plot also includes a description of the trend and observations found.
+          </p>
+
+      </div>
+    </div>
+  </div>
+
+    <!--Second Column in this Row-->
+
+   <div class="col-md-4">
+      <div class = "box box-1">
+        <div class = "container">
+          <div class="pb-2 mt-4 mb-2 border-bottom">
+                <h1>Visualizations<h1>
+          </div>
+        <a href="LatvsMaxTemperature.html"><img class = "plotSide" src="Images/LatVSTemp.png" alt="Latitude vs. Max Temperature"></a>
+        <a href="LatvsCloudiness.html"><img class = "plotSide" src="Images/LatVSCloudiness.png" alt="Latitude vs. Cloudiness"></a>
+        <a href="LatvsHumidity.html"><img class = "plotSide" src="Images/LatVSHumidity.png" alt="Latitude vs. Humidity" ></a>
+        <a href="LatvsWindSpeed.html"><img class = "plotSide" src="Images/LatVSWindSpeed.png" alt="Latitude vs. Wind Speed"></a>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+  </body>
+
+</html>

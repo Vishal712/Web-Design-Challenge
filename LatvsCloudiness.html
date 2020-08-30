@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light" style= "background-color: #F8F8FF;">
+  <a class="navbar-brand latfont" href="index.html">Lattitude</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="LatvsMaxTemperature.html">Latitude vs Max Temperature</a>
+          <a class="dropdown-item" href="LatvsHumidity.html">Latitude vs Humidity</a>
+          <a class="dropdown-item" href="LatvsCloudiness.html">Latitude vs Cloudiness</a>
+          <a class="dropdown-item" href="LatvsWindSpeed.html">Latitude vs Wind Speed</a>
+
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Comparison.html">Comparison</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Data.html">Data</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+  <br>
+  </br>
+
+
+    <div class="row">
+    <!--First Column in this Row-->
+    <div class="col-md-8">
+      <div class = "boxVis">
+        <div class = "container">
+          <div class="pb-2 mt-4 mb-2 border-bottom">
+                <h1>Cloudiness<h1>
+          </div>
+        <br> <p>Comparing Lattitude to cloudiness in each city.</p>
+          <a><img src="Images/LatVSCloudiness.png" alt="Latitude vs. Cloudiness" height="500" width="500"></a>
+          <p>This plot shows a comparison of Lattitude and the cloudiness recorded in each city. Just like the Humidity plot, there isn't a clear cut
+            visual cue for a specific pattern that can be found here. The only trend based solely on the plot is that cloudiness seems to be on the extremes rather
+            than clustered in the middle. This means that there a lot of cities clustered at around 100% cloudiness, and then clustered also at 0% cloudiness.
+             <br>
+             With more information of how the cloudiness was recorded, as well as the fact that there seems to be a longer cluster of 100% cloudiness of lattitudes
+             over 0, we can potentially say that the farther away from the equator there are more cities with either 0 or 100% cloudiness.
+             <br>
+
+          </p>
+
+      </div>
+    </div>
+  </div>
+
+    <!--Second Column in this Row-->
+
+   <div class="col-md-4">
+      <div class = "box box-1">
+        <div class = "container">
+          <div class="pb-2 mt-4 mb-2 border-bottom">
+                <h1>Visualizations<h1>
+          </div>
+          <a href="LatvsMaxTemperature.html"><img class = "plotSide" src="Images/LatVSTemp.png" alt="Latitude vs. Max Temperature"></a>
+          <a href="LatvsCloudiness.html"><img class = "plotSide" src="Images/LatVSCloudiness.png" alt="Latitude vs. Cloudiness"></a>
+          <a href="LatvsHumidity.html"><img class = "plotSide" src="Images/LatVSHumidity.png" alt="Latitude vs. Humidity" ></a>
+          <a href="LatvsWindSpeed.html"><img class = "plotSide" src="Images/LatVSWindSpeed.png" alt="Latitude vs. Wind Speed"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+
+</html>
